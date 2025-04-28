@@ -12,7 +12,7 @@ Sistem otomatis untuk mengatur kecerahan lampu berdasarkan intensitas cahaya sek
 - 📊 **LCD I2C 16x2** (Menampilkan data real-time)  
 - 💡 **LED** (Output lampu yang dikendalikan)  
 - 🔌 **Resistor 10kΩ** (Stabilisasi sinyal LDR)  
--   **Breadboard** (Prototyping sirkuit)  
+- � **Breadboard** (Prototyping sirkuit)  
 
 ## 📋 Fitur  
 - ✅ Kontrol kecerahan lampu otomatis (PWM)  
@@ -22,9 +22,9 @@ Sistem otomatis untuk mengatur kecerahan lampu berdasarkan intensitas cahaya sek
 ## 🛠️ Pembagian Tugas Kelompok  
 | Anggota           | Peran                               |  
 |-------------------|-------------------------------------|  
-| Pahrul Hidayat    | Sistem kecerahan otomatis & presentasi |  
-| Agung Yuda        | Rancangan Arduino & presentasi      |  
-| Devi Githa        | Dokumentasi & video                 |  
+| Pahrul Hidayat    | Membuat Sistem Kecerahan Lampu Otomatis dan Presentasi |  
+| Agung Yuda        | Membantu Merancang Arduino dan Presentasi      |  
+| Devi Githa        | Menyusun Presentasi dan Membuat Dokumentasi serta Video.     |  
 
 ## 🔗 Tautan Proyek  
 - **Simulasi Online**: [Wokwi](https://wokwi.com/projects/429004339649088513)  
