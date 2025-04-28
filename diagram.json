@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "author": "Pahrul H Koswara",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -3, "left": 290.8, "attrs": {} },
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-led", "id": "led1", "top": 73.2, "left": 368.6, "attrs": { "color": "red" } },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 128.75,
+      "left": 345.6,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-lcd1602",
+      "id": "lcd1",
+      "top": 208,
+      "left": 303.2,
+      "attrs": { "pins": "i2c" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 31.8,
+      "left": 391.6,
+      "rotate": 180,
+      "attrs": {}
+    }
+  ],
+  "connections": [
+    [ "bb1:tp.1", "uno:5V", "green", [ "v0" ] ],
+    [ "bb1:tn.2", "uno:GND.2", "green", [ "v0" ] ],
+    [ "ldr1:AO", "uno:A0", "green", [ "h0" ] ],
+    [ "led1:A", "r1:2", "green", [ "v0" ] ],
+    [ "r1:1", "uno:3", "green", [ "v0" ] ],
+    [ "led1:C", "uno:GND.3", "green", [ "v0" ] ],
+    [ "lcd1:GND", "uno:GND.3", "black", [ "h0" ] ],
+    [ "lcd1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "lcd1:SDA", "uno:A4", "green", [ "h0" ] ],
+    [ "lcd1:SCL", "uno:A5", "green", [ "h0" ] ],
+    [ "ldr1:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "ldr1:VCC", "bb1:9t.d", "", [ "$bb" ] ],
+    [ "ldr1:GND", "bb1:9t.c", "", [ "$bb" ] ],
+    [ "ldr1:DO", "bb1:9t.b", "", [ "$bb" ] ],
+    [ "ldr1:AO", "bb1:9t.a", "", [ "$bb" ] ],
+    [ "r1:1", "bb1:4b.h", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:10b.h", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:9b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:8b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
